@@ -2,7 +2,7 @@
 #print if number is greater than 10
 x=$1
 
-if ( $x -gt 10 )
+if ( "$x" -gt 10 )
 then
 echo "number $x is greater than 10"
 else
