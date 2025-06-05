@@ -3,9 +3,9 @@ DATE=$(date +%F-%H-%M-%S)
 filename=$0
 LOGFILE=/tmp/$filename-$DATE.log
 
-R=\e[31m
-G=\e[32m
-N=\e[0m
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 userid=$(id -u)
 
