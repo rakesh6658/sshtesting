@@ -7,6 +7,5 @@ then
 echo "number $x is greater than 10"
 else
 echo "number $x is less than 10"
-else
-echo "number $x is equal to 10"
+
 fi
