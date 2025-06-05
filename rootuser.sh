@@ -2,7 +2,7 @@
 
 user=$(id -u)
 
-if [ $user -nq 0 ] 
+if [ $user -ne 0 ] 
 then
 echo "user is not root user run with root access"
 else
