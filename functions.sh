@@ -3,6 +3,10 @@ DATE=$(date +%F-%H-%M-%S)
 filename=$0
 LOGFILE=/tmp/$filename-$DATE.log
 
+R=\e[31m
+G=\e[32m
+N=\e[0m
+
 userid=$(id -u)
 
 if [ $userid -ne 0 ]
@@ -13,10 +17,10 @@ fi
 validate(){
     if [ $1 -ne 0 ]
     then
-    echo " $2 installation.... failure"
+    echo -e " $2 installation.... $R failure $N"
     exit 1s
     else
-    echo " $2 installation .... success"
+    echo -e " $2 installation .... $G success $N"
     fi
 
 }
