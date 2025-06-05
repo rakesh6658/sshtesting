@@ -2,10 +2,10 @@
 
 echo "enter user name"
 
-read username
+read -p username
 
 echo "enter password"
 
-read password
+read -s  password
 
 echo " db username is $username and password is $password "
