@@ -6,14 +6,6 @@ LOGFILE=/tmp/$filename-$DATE.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-
-userid=$(id -u)
-
-if [ $userid -ne 0 ]
-then
-echo "user is not root user"
-exit 23
-fi
 validate(){
     if [ $1 -ne 0 ]
     then
@@ -24,7 +16,16 @@ validate(){
     fi
 
 }
-yum install mysqlk -y &>> $LOGFILE
+
+userid=$(id -u)
+
+if [ $userid -ne 0 ]
+then
+echo "user is not root user"
+exit 23
+fi
+
+yum install mysql -y &>> $LOGFILE
 validate $? mysql
 yum install postfix -y &>> $LOGFILE
 validate $? postfix
