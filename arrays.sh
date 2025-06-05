@@ -2,4 +2,4 @@
 
 names=("rakesh", "dubbu", "santha", "narayanamma", "babitha")
 
-echo "family members are $names[@]"
+echo "family members are ${names[@]}"
