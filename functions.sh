@@ -1,4 +1,7 @@
 #!/bin/bash
+DATE=$(date)
+filename=$0
+LOGFILE=/tmp/$filename-$DATE.log
 
 userid=$(id -u)
 
@@ -17,7 +20,7 @@ validate(){
     fi
 
 }
-yum install mysql -y
+yum install mysql -y &>> $LOGFILE
 validate $? mysql
-yum install postfix -y
+yum install postfix -y &>> $LOGFILE
 validate $? postfix
