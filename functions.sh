@@ -1,5 +1,5 @@
 #!/bin/bash
-DATE=$(date)
+DATE=$(date +%F-%H-%M-%S)
 filename=$0
 LOGFILE=/tmp/$filename-$DATE.log
 
