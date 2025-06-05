@@ -2,9 +2,12 @@
 #print if number is greater than 10
 x=$1
 
-if [ "$x" -ge 10 ]
+if [ "$x" -gt 10 ]
 then
 echo "number $x is greater than 10"
+elif [ "$x" -ge 10 ]; then
+echo "number $x is equal to 10"
+
 else
 echo "number $x is less than 10"
 
