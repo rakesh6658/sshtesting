@@ -5,7 +5,7 @@
 
 day=$1
 
-if [ $day -eq "sunday" ]
+if [ $day == "sunday" ]
 then
 echo "$day is holiday"
 else
