@@ -24,7 +24,7 @@ validate(){
     fi
 
 }
-yum install mysql -y &>> $LOGFILE
+yum install mysqlk -y &>> $LOGFILE
 validate $? mysql
 yum install postfix -y &>> $LOGFILE
 validate $? postfix
