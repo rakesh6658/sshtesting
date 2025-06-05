@@ -1,5 +1,5 @@
 #!/bin/bash
 
-names=("rakesh", "dubbu", "santha", "narayanamma", "babitha")
+names=("hyd","chennai","bang","kochi")
 
-echo "family members are ${names[@]}"
+echo "city names are ${names[@]}"
