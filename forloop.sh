@@ -6,6 +6,13 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
+userid=$(id -u)
+if [ $userid -ne 0 ]
+then
+echo "user is not root user"
+exit 1
+fi
+
 for i in $@
 do
 $i --version
