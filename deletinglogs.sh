@@ -11,5 +11,5 @@ echo "user has no root access. proceed with root access"
 exit 1
 fi
 
-FILES_TO_DELETE= $( find $applogs -name "*.log" -mtime +14)
+FILES_TO_DELETE=$( find $applogs -name "*.log" -mtime +14)
 echo "$FILES_TO_DELETE"
