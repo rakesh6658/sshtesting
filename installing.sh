@@ -10,6 +10,7 @@ Y="\e[0;33m"
 N="\e[0m"
 validate(){
 if [ $1 -ne 0 ]
+then
 echo  -e " $2  $R installation....failure $N"
 else
 echo -e " $2  $G installation....success $N"
