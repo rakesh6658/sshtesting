@@ -33,4 +33,5 @@ sudo yum install $i -y &>>$LOGFILE
 validate $? $i
 else 
 echo  -e " $i  $Y installed already $N"
+fi
 done
