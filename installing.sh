@@ -14,4 +14,4 @@ then
 echo "user has no root access. proceed with root access"
 exit 1
 fi
-echo "$LOGFILE $R $G $Y $N"
+echo -e "$LOGFILE $R $G $Y $N"
