@@ -15,7 +15,7 @@ fi
 
 for i in $@
 do
-$i --version
+$i --version &>> $LOGFILE
 if [ $? -ne 0 ]
 then
 
