@@ -1,6 +1,6 @@
 #!/bin/bash
 
-applogs=/home/ec2-user/app-logs
+applogs=/home/ec2-user/applogs
 DATE=$(date +%F-%H-%M-%S)
 scriptname=$0
 LOGFILE=$LOGS_DIR/$scriptname-$DATE.log
