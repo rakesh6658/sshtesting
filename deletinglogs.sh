@@ -15,8 +15,8 @@ fi
 FILES_TO_DELETE=$( find $applogs -name "*.log" -mtime +14)
 echo "$LOGFILE"
 
-# while read -r line 
-# do
-# echo "$line"
-# rm $line &>> $LOGFILE
-# done <<< $FILES_TO_DELETE
+while read -r line 
+do
+echo "$line"
+rm $line &>> $LOGFILE
+done <<< $FILES_TO_DELETE
