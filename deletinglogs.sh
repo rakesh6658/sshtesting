@@ -13,10 +13,10 @@ LOGFILE=$LOGS_DIR/$scriptname-$DATE.log
 # fi
 
 FILES_TO_DELETE=$( find $applogs -name "*.log" -mtime +14)
-echo "$LOGFILE"
+#echo "$LOGFILE"
 
 while read  line 
 do
-echo "$line" &>>$LOGFILE
+echo "deleting $line" &>>$LOGFILE
 rm -rf $line 
 done <<< $FILES_TO_DELETE
